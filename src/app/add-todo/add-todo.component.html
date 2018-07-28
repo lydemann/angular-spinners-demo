@@ -19,5 +19,8 @@
       <input type="date" name="todo-due-date" placeholder="yyyy-mm-dd" [appInvalidDate]="true" class="form-control" [(ngModel)]="currentTODO.dueDate" id="todo-due-date" placeholder="Enter due date">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+    <div *ngIf="isLoading" class="relative">
+      <app-spinner></app-spinner>
+    </div>
   </form>
 </div>

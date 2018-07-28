@@ -17,14 +17,14 @@ export class TodoListService {
     }
 
     public addTodo(todo: TODOItem) {
-        return of().pipe(delay(2000));
+        return of(null).pipe(delay(2000));
     }
 
     public updateTodo(todo: TODOItem) {
-        return of().pipe(delay(2000));
+        return of(null).pipe(delay(2000));
     }
 
-    public deleteTodo(todo: TODOItem) {
-        return of().pipe(delay(2000));
+    public deleteTodo(id: string) {
+        return of(null).pipe(delay(2000));
     }
 }

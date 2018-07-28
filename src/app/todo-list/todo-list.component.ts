@@ -18,6 +18,7 @@ export class TodoListComponent {
   }
 
   deleteTodo(id: string) {
+
     const deleteIndex = this.todoListService.todoList.findIndex(todo => todo.id === id);
     this.todoListService.todoList.splice(deleteIndex, 1);
   }
