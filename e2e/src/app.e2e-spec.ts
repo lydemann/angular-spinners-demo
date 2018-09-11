@@ -1,14 +1,15 @@
-import { AppPage } from './app.po';
+import { TodosPage } from './todos.po';
 
 describe('workspace-project App', () => {
-  let page: AppPage;
+  let page: TodosPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new TodosPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display 2 todo items', async () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to spinners-demo!');
+    // const count = await page.getTodos().count();
+    await expect(page.getTodos().count()).toBe(2);
   });
 });
