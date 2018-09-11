@@ -11,7 +11,7 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome'
   },
-  // SELENIUM_PROMISE_MANAGER: false,
+  SELENIUM_PROMISE_MANAGER: false,
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
