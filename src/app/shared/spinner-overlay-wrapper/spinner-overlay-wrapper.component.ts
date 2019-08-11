@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpinnerOverlayWrapperComponent implements OnInit {
 
+  @Input() public readonly showSpinner = false;
+  @Input() public readonly message: string = 'Loading...';
+  
   constructor() { }
 
   ngOnInit() {
